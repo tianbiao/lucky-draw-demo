@@ -1,0 +1,27 @@
+{
+  "name": "lucky-draw-for-tech-radar",
+  "version": "1.0.0",
+  "description": "This is the lucky draw application for tech radar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lucky",
+    "draw",
+    "tech",
+    "radar"
+  ],
+  "author": "Biao Tian",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "jquery": "^3.2.1",
+    "multer": "^1.3.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "socket.io": "^2.0.4"
+  }
+}
