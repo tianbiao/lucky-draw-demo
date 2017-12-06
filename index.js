@@ -6,6 +6,10 @@ app.get('/', function(req, res){
 	res.sendFile(__dirname + '/index.html');
 });
 
+app.get('/image', function(req, res){
+	res.sendFile(__dirname + '/QRCode.png');
+});
+
 app.post('/', function (req, res) {
 
 	req.on('data', function(data){
@@ -17,11 +21,6 @@ app.post('/', function (req, res) {
 	res.send('ok');
 });
 
-io.on('connection', function(socket){
-	socket.on('chat message', function(msg){
-		io.emit('chat message', msg);
-	});
-});
 
 http.listen(3000, function(){
   console.log('listening on *:3000');

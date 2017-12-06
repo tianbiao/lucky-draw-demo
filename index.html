@@ -11,10 +11,15 @@
       #messages { list-style-type: none; margin: 0; padding: 0; }
       #messages li { padding: 5px 10px; }
       #messages li:nth-child(odd) { background: #eee; }
+      .QR-code-section { text-align: center; }
+      img { width: 500px; height: 500px; }
     </style>
   </head>
   <body>
     <ul id="messages"></ul>
+    <div class="QR-code-section">
+      <img src="http://localhost:3000/image"/>
+    </div>
     <form action="">
       <input id="m" autocomplete="off" /><button>Send</button>
     </form>
